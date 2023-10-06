@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Panel de Administración</h2>
+        <div class="admin-options">
+            <h3>Resultados Parciales de las Votaciones</h3>
+            <p>Aquí puedes ver los resultados parciales de las votaciones:</p>
+            
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Candidato</th>
+                        <th>Votos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Candidato 1</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Candidato 2</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Control de Votaciones</h3>
+            <p>Puedes iniciar o cerrar las votaciones aquí:</p>
+            <button id="iniciarVotaciones">Iniciar Votaciones</button>
+            <button id="cerrarVotaciones">Cerrar Votaciones</button>
+
+            <h3>Enviar Correos Electrónicos</h3>
+            <p>Envía correos a los usuarios:</p>
+            <textarea id="correoTexto" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <button id="enviarCorreos">Enviar Correos</button>
+        </div>
+    </div>
+</body>
+</html>
