@@ -1,0 +1,83 @@
+id;rut;nombre;apellido;genero;correo;clave;tipo;voto;conteoVotos;votoPorM;votoPorF;invitado
+1;33.244.798-K;Mayennis;Aguilar Jerez;F;maguilar@mail.com;93308;1;0;0;0;0;0
+2;5.594.056-6;Stephy;Araya Herrera;F;saraya@mail.com;90499;1;0;0;0;0;0
+3;32.988.460-0;Maricela;Astete Ruiz;F;mastete@mail.com;95601;1;0;0;0;0;0
+4;26.255.437-6;Karina;Basualto Retamal;F;kbasualto@mail.com;95631;1;0;0;0;0;0
+5;34.201.945-5;Erika;Becerra Trigo;F;ebecerra@mail.com;94068;1;0;0;0;0;0
+6;24.307.589-0;Iris;Belmar Bravo;F;mbelmar@mail.com;99098;1;0;0;0;0;0
+7;10.683.198-K;Jimena;Bloomfield Apablaza;F;jbloomfield@mail.com;91387;1;0;0;0;0;0
+8;8.293.557-7;Erika;Bravo Acevedo;F;ebravo@mail.com;95323;1;0;0;0;0;0
+9;36.038.375-K;Veronica;Caceres Cisterna;F;vcaceres@mail.com;93819;1;0;0;0;0;0
+10;1.032.106-6;Rocío;Campos Herrera;F;rcampos@mail.com;93940;1;0;0;0;0;0
+11;27.729.125-8;Elizabeth;Castillo Gomez;F;ecastillo@mail.com;95201;1;0;0;0;0;0
+12;20.933.744-4;Sofia;Echeverria Arroyo;F;secheverria@mail.com;93180;1;0;0;0;0;0
+13;12.151.599-7;Andrea;Farí­as Troncoso;F;afarias@mail.com;92614;1;0;0;0;0;0
+14;3.549.102-2;Victor;Gajardo Marquez;M;vgajardo@mail.com;98865;1;0;0;0;0;0
+15;6.557.513-3;Martin;Gómez Mendoza;M;mgomez@mail.com;94687;1;0;0;0;0;0
+16;26.713.850-8;Rebeca;Gomez Navarrete;F;rgomez@mail.com;96846;1;0;0;0;0;0
+17;35.827.811-6;Marly;Gonzalez Escobar;F;mescobar@mail.com;95622;1;0;0;0;0;0
+18;10.856.066-5;Carolina;Gutierrez Miño;F;cgutierrez@mail.com;91675;1;0;0;0;0;0
+19;20.915.752-7;Claudio;Henríquez Henríquez;M;chenriquez@mail.com;98666;1;0;0;0;0;0
+20;36.475.229-6;Francisca;Inostroza Sepulveda;F;finostroza@mail.com;94659;1;0;0;0;0;0
+21;37.286.858-9;Nazhla;Lobos Flores;F;nlobos@mail.com;91311;1;0;0;0;0;0
+22;12.935.389-9;Carolina;Madrid Parra;F;cmadrid@mail.com;92201;1;0;0;0;0;0
+23;29.461.996-8;Blanca;Manriquez Burgos;F;bmanriquez@mail.com;91191;1;0;0;0;0;0
+24;34.828.282-4;Mariana;Maraboli Espinoza;F;mmaraboli@mail.com;96994;1;0;0;0;0;0
+25;11.240.431-7;Ivonne;Martinez Aguayo;F;imartinez@mail.com;97360;1;0;0;0;0;0
+27;7.342.860-0;Catalina;Miranda Lopez;F;cmiranda@mail.com;94103;1;0;0;0;0;0
+28;3.775.938-8;Tomas;Mondaca Salinas;M;tmondaca@mail.com;94210;1;0;0;0;0;0
+29;38.674.644-3;Rocio;Morales Garrido;F;rmorales@mail.com;99059;1;0;0;0;0;0
+30;35.384.563-2;Carla;Muñoz Alcantar;F;cmunoz@mail.com;90993;1;0;0;0;0;0
+31;7.831.266-6;Paulina;Muñoz Molina;F;pmunoz@mail.com;91451;1;0;0;0;0;0
+32;10.092.497-8;Alejandra;Muñoz Valenzuela;F;amunoz@mail.com;97810;1;0;0;0;0;0
+33;5.760.759-9;Loreto;Nuñez Gonzalez;F;lnunez@mail.com;92791;1;0;0;0;0;0
+34;29.801.814-4;Nataly;Orellana Saldaña;F;norellana@mail.com;91696;1;0;0;0;0;0
+35;25.559.525-3;Fabiola;Ortega Mena;F;fortega@mail.com;94170;1;0;0;0;0;0
+36;14.033.542-8;Carla;Oses Mosqueda;F;coses@mail.com;90620;1;0;0;0;0;0
+37;18.659.804-0;Maria;Oyarce Soto;F;moyarce@mail.com;91735;1;0;0;0;0;0
+38;16.844.239-4;Paula;Ramirez Saavedra;F;remuneraciones@mail.com;95896;1;0;0;0;0;0
+39;12.160.078-1;Yenifert;Retamal Gonzalez;F;yretamal@mail.com;93809;1;0;0;0;0;0
+40;14.493.424-5;Rossana;Retamal Vergara;F;rretamal@mail.com;96688;1;0;0;0;0;0
+41;39.972.640-9;Nadia;Romero Contreras;F;nromero@mail.com;97884;1;0;0;0;0;0
+42;7.832.876-6;Teresa;Salas Guevara;F;tsalas@mail.com;95405;1;0;0;0;0;0
+43;3.321.544-4;Guillermo;Salazar Cifuentes;M;gsalazar@mail.com;91697;1;0;0;0;0;0
+44;24.702.948-6;María Ignacia;Salinas Correa;F;msalinas@mail.com;94667;1;0;0;0;0;0
+45;1.925.464-4;Maura;San Martí­n Vera;F;msanmartin@mail.com;98024;1;0;0;0;0;0
+46;11.101.071-4;Lucas;Sanchez;M;lsanchez@mail.com;96571;1;0;0;0;0;0
+47;38.646.902-4;Lerky;Solarte Manzanillo;F;lsolarte@mail.com;97832;1;0;0;0;0;0
+48;23.457.458-2;Paulina;Soto Guerrero;F;psoto@mail.com;98321;1;0;0;0;0;0
+49;11.643.616-7;Roberto;Tapia Roco;M;rtapia@mail.com;92491;1;0;0;0;0;0
+50;2.012.795-5;Carlos;Toro Urrejola;M;ctoro@mail.com;98112;1;0;0;0;0;0
+51;35.496.513-5;Solange;Trujillo Hernandez;F;strujillo@mail.com;91204;1;0;0;0;0;0
+52;39.454.622-4;Ruth;Valenzuela Reyes;F;rvalenzuela@mail.com;94713;1;0;0;0;0;0
+53;15.778.727-6;Karen;Valero Bustamante;F;kvalero@mail.com;95565;1;0;0;0;0;0
+54;35.830.341-2;Felipe;Vejar Briones;M;fvejar@mail.com;92398;1;0;0;0;0;0
+55;17.380.551-9;Luis;Vergara De La Fuente;M;lvergara@mail.com;95284;1;0;0;0;0;0
+56;16.021.582-8;Alvaro;Vergara Sobarzo;M;avergara@mail.com;92721;1;0;0;0;0;0
+57;36.760.282-1;Andrea;Medina Vera;F;dramedinadeojos@mail.com;94498;2;0;0;0;0;0
+58;13.869.248-5;Anied;Salamale Pedron;F;anieds@mail.com;94014;2;0;0;0;0;0
+59;38.121.489-3;Astrid;Rosales Medina;F;astrid_carolina12@mail.com;93106;2;0;0;0;0;0
+60;16.057.431-3;Blas;Rivera Madariaga;M;blasrive@mail.com;97019;2;0;0;0;0;0
+61;18.414.408-5;Camila;Jimenez Olivares;F;camila.cjo@mail.com;93586;2;0;0;0;0;0
+62;21.145.404-0;Delta;Mujica Patiño;F;deltacmp27@mail.com;95028;2;0;0;0;0;0
+63;35.628.361-9;Eradis;Jerez Mora ;F;eradis14@mail.com;92079;2;0;0;0;0;0
+64;24.552.717-9;Fernando;Colombo Rengel;M;colombofer@mail.com;94051;2;0;0;0;0;0
+65;26.434.544-8;Gonzalo;Torres Nuñez;M;gonzalotorresn@mail.com;91592;2;0;0;0;0;0
+66;36.268.759-4;Ibrahim;Gonzalez Escobar;M;dribrahimgonzalezescobar@mail.com;97690;2;0;0;0;0;0
+67;12.829.966-1;Ingrid;Carballo Duran ;F;ingridcarballod@mail.com;93496;2;0;0;0;0;0
+68;26.710.621-5;Jaime;Bawarshi Abrigo;M;jaimebawarshi@mail.com;94492;2;0;0;0;0;0
+69;1.441.521-1;Julia;Molina Zuñiga;F;jpmzuniga@mail.com;93913;2;0;0;0;0;0
+70;24.458.051-3;Marcos;Quijada Stanovich;M;marcox87@mail.com;91689;2;0;0;0;0;0
+71;9.493.506-6;Maria;Aguilera Aponte;F;mariale.aguilera81@mail.com;95560;2;0;0;0;0;0
+72;30.126.417-8;Maria;Delgado Vivas;F;maryale86@mail.com;95285;2;0;0;0;0;0
+73;13.094.441-8;Mariamil;Maluenga Valera;F;mariamil003@mail.com;93363;2;0;0;0;0;0
+74;33.895.880-3;Mariana;Espinosa Alvarez;F;medq.me@mail.com;98599;2;0;0;0;0;0
+75;21.484.042-1;Mariela;Quinteros De Arocha;F;maquivi9@mail.com;94252;2;0;0;0;0;0
+76;20.407.436-4;Mario;Colosso Delgado;M;mario.colosso@mail.com;93333;2;0;0;0;0;0
+77;23.228.456-0;Milton;Alvarez Condeza;M;malvarez_c@mail.com;95218;2;0;0;0;0;0
+78;7.083.865-5;Nelsareth;Campos Gonzalez;F;nelsarethcampos@mail.com;97238;2;0;0;0;0;0
+79;25.707.718-7;Paula;Rodriguez Gutierrez;F;paulaarodriguez@mail.com;99601;2;0;0;0;0;0
+80;32.765.771-2;Rafael;Mateo Camaran;M;dr.ramc1385@mail.com;99443;2;0;0;0;0;0
+81;5.904.379-9;Roberto;Diaz Marin;M;rdm650@mail.com;92628;2;0;0;0;0;0
+82;33.218.567-5;Tamara;Meneses Abarca;F;tamarameneses@mail.com;95076;2;0;0;0;0;0
+83;39.711.396-5;Valentina;Millano Mora;F;valentina.millanom@mail.com;93195;2;0;0;0;0;0
