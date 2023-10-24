@@ -52,7 +52,7 @@ def logout():
 def validar_usuario(rut, clave):
     # Aquí debes implementar la lógica de validación de usuario y clave
     # Verifica si el usuario y la clave coinciden con la base de datos
-    return False  # Devuelve True si la validación es exitosa
+    return True  # Devuelve True si la validación es exitosa
 
 if __name__ == '__main__':
     app.run(debug=True)
