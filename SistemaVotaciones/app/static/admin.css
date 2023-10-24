@@ -1,75 +1,91 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #2c3e50;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Cambiado a min-height para asegurar que el contenido sea visible incluso si es más largo que la pantalla */
 }
 
 .admin-container {
-    background-color: #fff;
+    background-color: #2c3e50; /* Fondo del contenedor en un tono más oscuro */
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     text-align: center;
+    max-width: 600px; /* Limita el ancho del contenedor para que no sea demasiado ancho en pantallas grandes */
+    width: 100%; /* Hace que el contenedor sea 100% del ancho disponible */
+    margin: 0 20px; /* Añade margen izquierdo y derecho para evitar que el contenido toque los bordes de la pantalla */
+    color: #ecf0f1; /* Color del texto en el contenedor */
 }
 
 h2 {
     margin-bottom: 20px;
+    color: #ecf0f1; /* Color del título más claro */
 }
 
 h3 {
-    margin-top: 20px;
     margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-.admin-options {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button:hover {
-    background-color: #0056b3;
+    color: #ecf0f1; /* Color del subtítulo más claro */
 }
 
 .results-table {
     width: 100%;
+    margin-top: 15px;
     border-collapse: collapse;
-    margin-top: 10px;
 }
 
 .results-table th,
 .results-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .results-table th {
-    background-color: #f2f2f2;
+    background-color: #3498db; /* Azul */
+    color: #fff;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #34495e; /* Fondo más oscuro para filas pares */
+    color: #ecf0f1;
+}
+
+.results-table tr:nth-child(odd) {
+    background-color: #2c3e50; /* Fondo en tono más oscuro para filas impares */
+    color: #ecf0f1;
+}
+
+.admin-options select,
+.admin-options input[type="text"],
+.admin-options textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: #ecf0f1; /* Texto más claro */
+}
+
+.admin-options button {
+    background-color: #3498db; /* Azul */
+    color: #ecf0f1; /* Texto más claro */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-options button:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el cursor */
+}
+
+#seleccionCorreo,
+#correoUsuario,
+#correoTexto {
+    background-color: #34495e;
+    color: #ecf0f1;
 }

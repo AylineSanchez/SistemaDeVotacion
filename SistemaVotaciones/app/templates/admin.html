@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
 </head>
 <body>
     <div class="admin-container">
@@ -58,6 +58,18 @@
 
             <h3>Enviar Correos Electrónicos</h3>
             <p>Envía correos a los usuarios:</p>
+
+            <label for="seleccionCorreo">Seleccione un destinatario:</label>
+            <select id="seleccionCorreo" name="seleccionCorreo">
+                <option value="todos">Enviar a Todos</option>
+                <option value="usuario">Enviar a Usuario Específico</option>
+            </select>
+
+            <div id="destinatarioUsuario" style="display: none;">
+                <label for="correoUsuario">Correo del Usuario:</label>
+                <input type="text" id="correoUsuario" name="correoUsuario" placeholder="Correo del usuario">
+            </div>
+
             <textarea id="correoTexto" placeholder="Escribe tu mensaje aquí..."></textarea>
             <button id="enviarCorreos">Enviar Correos</button>
         </div>
