@@ -74,7 +74,6 @@ def admin():
     if 'usuario' not in session:
         return redirect(url_for('login'))
     
-    # Aquí debes colocar la lógica para mostrar la página de votación
     return render_template('admin.html')
 
 # Ruta para la página de inicio
