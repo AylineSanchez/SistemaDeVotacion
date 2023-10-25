@@ -1,10 +1,24 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+import pandas as pd
 
 app = Flask(__name__)
 app.secret_key = 'tu_clave_secreta'
 
 # Configura la ruta estática para archivos CSS y otros archivos estáticos
 app.config['STATIC_FOLDER'] = 'static'
+
+# Función para leer los candidatos desde un archivo Excel
+def leer_candidatos_desde_excel(archivo_excel, genero, tipo):
+    try:
+        # Lee los datos del archivo Excel
+        datos = pd.read_excel(archivo_excel)
+
+        # Filtra candidatos por género y tipo
+        candidatos = datos.loc[(datos['genero'] == genero) & (datos['tipo'] == tipo), ['nombre', 'apellido']]
+        return candidatos.apply(lambda row: f"{row['nombre']} {row['apellido']}", axis=1).tolist()
+    except Exception as e:
+        print("Error al leer el archivo Excel:", str(e))
+        return []
 
 # Ruta para la página de inicio de sesión
 @app.route('/app', methods=['GET', 'POST'])
@@ -33,9 +47,26 @@ def login():
 def votacion():
     if 'usuario' not in session:
         return redirect(url_for('login'))
-    
-    # Aquí debes colocar la lógica para mostrar la página de votación
-    return render_template('votacion.html')
+
+    # Llama a la función para leer los candidatos desde el archivo Excel
+    candidatos_m = leer_candidatos_desde_excel('datos.xlsx', 'M','1')
+    candidatos_f = leer_candidatos_desde_excel('datos.xlsx', 'F','1')
+
+    # Renderiza la plantilla de la página de votación y pasa la lista de candidatos
+    return render_template('votacion.html', candidatos_m=candidatos_m, candidatos_f=candidatos_f)
+
+# Ruta para la página de votación profesor
+@app.route('/votacion2')
+def votacion2():
+    if 'usuario' not in session:
+        return redirect(url_for('login'))
+
+    # Llama a la función para leer los candidatos desde el archivo Excel
+    candidatos_m = leer_candidatos_desde_excel('datos.xlsx', 'M', '2')
+    candidatos_f = leer_candidatos_desde_excel('datos.xlsx', 'F', '2')
+
+    # Renderiza la plantilla de la página de votación y pasa la lista de candidatos
+    return render_template('votacion2.html', candidatos_m=candidatos_m, candidatos_f=candidatos_f)
 
 # Ruta para la página de administración
 @app.route('/admin')

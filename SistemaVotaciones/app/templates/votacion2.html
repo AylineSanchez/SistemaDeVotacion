@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votación</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='votacion.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='votacion2.css') }}">
 </head>
 <body>
     <div class="voting-container">
         <h2>Votación</h2>
         <form action="" method="post">
-            <h3>Mejor Compañero y Compañera</h3>
-            <label for="mejorCompañeroM">Masculino:</label>
-            <select id="mejorCompañeroM" name="mejorCompañeroM">
+            <h3>Mejor Profesor y Profesora</h3>
+            <label for="mejorProfesorM">Masculino:</label>
+            <select id="mejorProfesorM" name="mejorProfesorM">
                 {% for candidato in candidatos_m %}
                 <option value="{{ candidato }}">{{ candidato }}</option>
                 {% endfor %}
             </select>
             
-            <label for="mejorCompañeraF">Femenino:</label>
-            <select id="mejorCompañeraF" name="mejorCompañeraF">
+            <label for="mejorProfesorF">Femenino:</label>
+            <select id="mejorProfesorF" name="mejorProfesorF">
                 {% for candidata in candidatos_f %}
                 <option value="{{ candidata }}">{{ candidata }}</option>
                 {% endfor %}
