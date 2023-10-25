@@ -101,13 +101,10 @@
             <label for="seleccionCorreo">Seleccione un destinatario:</label>
             <select id="seleccionCorreo" name="seleccionCorreo">
                 <option value="todos">Enviar a Todos</option>
-                <option value="usuario">Enviar a Usuario Específico</option>
+                {% for correo in correos %}
+                <option value="{{ correo }}">{{ correo }}</option>
+                {% endfor %}
             </select>
-
-            <div id="destinatarioUsuario" style="display: none;">
-                <label for="correoUsuario">Correo del Usuario:</label>
-                <input type="text" id="correoUsuario" name="correoUsuario" placeholder="Correo del usuario">
-            </div>
 
             <textarea id="correoTexto" placeholder="Escribe tu mensaje aquí..."></textarea>
             <button id="enviarCorreos">Enviar Correos</button>

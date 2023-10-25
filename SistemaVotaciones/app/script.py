@@ -19,6 +19,19 @@ def leer_candidatos_desde_excel(archivo_excel, genero, tipo):
     except Exception as e:
         print("Error al leer el archivo Excel:", str(e))
         return []
+    
+def leer_correos_excel(archivo_excel):
+    try:
+        # Lee los datos del archivo Excel
+        datos = pd.read_excel(archivo_excel)
+
+        # Selecciona la columna de correos
+        correos = datos['correo'].tolist()
+
+        return correos
+    except Exception as e:
+        print("Error al leer el archivo Excel:", str(e))
+        return []
 
 # Ruta para la página de inicio de sesión
 @app.route('/app', methods=['GET', 'POST'])
@@ -73,6 +86,8 @@ def votacion2():
 def admin():
     if 'usuario' not in session:
         return redirect(url_for('login'))
+    
+    correos = leer_correos_excel('datos.xlsx')
     
     return render_template('admin.html')
 
