@@ -1,7 +1,17 @@
+import pymongo
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 app.secret_key = 'tu_clave_secreta'
+
+try:
+    cliente = pymongo.MongoClient("mongodb://localhost:27017/")
+    cliente.server_info()
+    print("conexion exitosa")
+except pymongo.errors.Server.Selection.Timeout.error as errorTiempo:
+    print("tiempo exedido"+errorTiempo)
+db = cliente["sistema_votaciones"]
+coleccion = db["usuario"]
 
 # Configura la ruta estática para archivos CSS y otros archivos estáticos
 app.config['STATIC_FOLDER'] = 'static'
@@ -55,4 +65,6 @@ def validar_usuario(rut, clave):
     return True  # Devuelve True si la validación es exitosa
 
 if __name__ == '__main__':
+
+
     app.run(debug=True)
