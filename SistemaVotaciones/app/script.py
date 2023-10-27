@@ -1,4 +1,5 @@
 import pymongo
+import bcrypt
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
@@ -20,11 +21,10 @@ app.config['STATIC_FOLDER'] = 'static'
 @app.route('/app', methods=['GET', 'POST'])
 def login():
     error_message = None  # Inicializa el mensaje de error
-
     if request.method == 'POST':
         # Obtener los datos del formulario
-        rut = request.form['rut']
-        clave = request.form['clave']
+        rut = coleccion["rut"]
+        clave = coleccion["clave"]
 
         # Realiza la validación de usuario y clave (debes implementar esta parte)
         if validar_usuario(rut, clave):
@@ -60,10 +60,13 @@ def logout():
 
 # Función de validación de usuario (debes implementar esta parte)
 def validar_usuario(rut, clave):
-    # Aquí debes implementar la lógica de validación de usuario y clave
-    # Verifica si el usuario y la clave coinciden con la base de datos
-    return True  # Devuelve True si la validación es exitosa
-
+    usuario = coleccion.find_one({"rut": rut})
+    if usuario:
+        # Si se encuentra el usuario, comprobar la contraseña
+        contrasena_hash = usuario["contrasena"]
+        if bcrypt.checkpw(clave.encode('utf-8'), contrasena_hash):
+            return True
+    return False
 if __name__ == '__main__':
 
 
